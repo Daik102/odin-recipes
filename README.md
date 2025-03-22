@@ -1,0 +1,1 @@
+Practice recipe pages for the Odin Project.
