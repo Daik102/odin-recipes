@@ -1,0 +1,17 @@
+body {
+  background-color:beige;
+}
+
+h1 {
+  font-size: 40px;
+  color:tomato;
+}
+
+a {
+  font-size: 18px;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
