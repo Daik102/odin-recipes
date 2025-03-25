@@ -48,8 +48,11 @@ li {
   margin: 4px auto;
 }
 
+ol {
+  padding: 0 20px 0 28px;
+}
+
 ol li {
   max-width: 600px;
   margin: 12px auto;
-  padding: 0 20px;
 }
