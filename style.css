@@ -1,5 +1,8 @@
 * {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,6 +12,16 @@ body {
 h1 {
   font-size: 40px;
   color:tomato;
+  max-width: 400px;
+  margin: 20px auto 40px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  max-width: 200px;
+  margin: 12px auto;
+  text-align: center;
 }
 
 a {
@@ -16,6 +29,3 @@ a {
   color: black;
 }
 
-li {
-  list-style-type: none;
-}
