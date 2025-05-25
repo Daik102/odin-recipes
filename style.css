@@ -6,12 +6,20 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --main-theme: rgb(237, 237, 193);
+  --sub-theme: rgb(255, 69, 0);
+  --hover-theme: rgb(255, 113, 88);
+  --paragraph-theme: #111;
+}
+
 a {
   text-decoration: none;
+  color: #111;
 }
 
 body {
-  background-color:beige;
+  background-color: var(--main-theme);
 }
 
 .container {
@@ -29,11 +37,11 @@ h1 {
 
 h1 a {
   font-size: 4.4rem;
-  color: orangered;
+  color: var(--sub-theme);
 }
 
 h1 a:hover {
-  color: rgb(255, 126, 104);
+  color: var(--hover-theme);
 }
 
 ul {
@@ -47,10 +55,23 @@ ul {
 
 ul a {
   font-size: 2.2rem;
-  color: #111;
 }
 
 ul a:hover {
-  color: tomato;
+  color: var(--sub-theme);
 }
 
+.container div {
+  position: fixed;
+  bottom: 4rem;
+  color: var(--paragraph-theme);
+  font-size: 1.8rem;
+}
+
+.container div a {
+  font-size: 1.8rem;
+}
+
+.container div a:hover {
+  color: var(--sub-theme);
+}
