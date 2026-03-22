@@ -16,8 +16,7 @@
 }
 
 :root {
-  --main-theme: #ededc1;
-  --sub-theme: #ff4500;
+  --board-theme: blanchedalmond;
   --black-theme: #222;
   --shadow-theme: rgba(0, 0, 0, 0.2);
 }
@@ -26,71 +25,91 @@ html {
   font-size: 10px;
 }
 
-body {
-  background-color: var(--main-theme);
-}
-
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 6rem;
-  height: 100vh;
   margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.title,
+.sub-title {
+  font-family: Arizonia-Regular;
 }
 
 .title {
+  margin-bottom: 6rem;
   font-size: 4.8rem;
-  font-family: Arizonia-Regular;
-  color: var(--sub-theme);
 }
 
-.recipe-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.4rem;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--black-theme);
-}
-
-.recipe-items a {
-  font-size: 3.6rem;
-  font-family: Arizonia-Regular;
-}
-
-.recipe-items a:hover {
-  color: var(--sub-theme);
-}
-
-.photo-container {
-  width: 36rem;
-  aspect-ratio: 4 / 3;
-  background-image: url(./images/dean-xavier-3vMwvstMCvw-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.photo {
+  width: 44rem;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
   box-shadow: 0.8rem 0.8rem 0.8rem var(--shadow-theme);
 }
 
-.link-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.4rem;
+.sub-title {
+  margin: 6.4rem 0 3.2rem;
+  font-size: 3.6rem;
 }
 
-.link-container a {
-  font-size: 1.8rem;
+.description-para {
+  width: 44rem;
+  padding: 2.4rem;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: var(--black-theme);
+  background-color: var(--board-theme);
+  border-radius: 1.2rem;
+}
+
+.ingredients-items,
+.steps-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 44rem;
+  padding: 2.4rem 4.8rem;
+  background-color: var(--board-theme);
+  border-radius: 1.2rem;
+}
+
+.ingredients-items {
+  gap: 1.6rem;
+}
+
+.steps-items {
+  gap: 3.2rem;
+}
+
+.ingredients-items li,
+.steps-items li {
+  font-size: 2.2rem;
   color: var(--black-theme);
 }
 
-.link-container a:hover {
-  color: var(--sub-theme);
+.steps-items li {
+  letter-spacing: 0.04rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 6rem 0 8rem;
+}
+
+.footer a {
+  font-weight: 600;
+  font-size: 3.6rem;
+  font-family: Arizonia-Regular;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--black-theme);
 }
 /* For smartphones in portrait mode */
 @media screen and (orientation: portrait) {
@@ -121,6 +140,12 @@ a {
   html {
     font-size: 10px;
   }
+
+  .description-para,
+  .ingredients-items,
+  .steps-items {
+    width: 60rem;
+  }
 }
 /* For smartphones in landscape mode */
 @media screen and (orientation: landscape) {
@@ -132,11 +157,15 @@ a {
     background-color: var(--black-theme);
   }
 
-  .main {
+  .main,
+  .footer {
     width: 72rem;
-    height: auto;
-    padding: 8rem 0;
-    background-color: var(--main-theme);
+  }
+
+  .description-para,
+  .ingredients-items,
+  .steps-items {
+    width: 60rem;
   }
 }
 
@@ -157,16 +186,9 @@ a {
     font-size: 8.5px;
   }
 }
-/* For small and middle tablets in landscape mode */
+/* For tablets in landscape mode and laptops */
 @media screen and (orientation: landscape) and (min-width: 64rem) {
   html {
     font-size: 10px;
-  }
-}
-/* For large tablets in landscape mode and laptops */
-@media screen and (orientation: landscape) and (min-width: 64rem) and (min-height: calc(56rem - 6rem)) {
-  .main {
-    height: 100vh;
-    padding: 0;
   }
 }
