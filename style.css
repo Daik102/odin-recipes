@@ -1,18 +1,18 @@
 @font-face {
   font-family: Arizonia-Regular;
-  src: url(../fonts/Arizonia-Regular.woff2) format('woff2');
+  src: url(./fonts/Arizonia-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto-VariableFont_wdth\,wght.woff2) format('woff2');
+  src: url(./fonts/Roboto-VariableFont_wdth\,wght.woff2) format('woff2');
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Arizonia-Regular, Roboto, Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -41,8 +41,7 @@ body {
 }
 
 .title {
-  font-size: 4.8rem;
-  font-family: Arizonia-Regular;
+  font-size: 4.4rem;
   color: var(--sub-theme);
 }
 
@@ -50,18 +49,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1.6rem;
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--black-theme);
 }
 
 .recipe-items a {
   font-size: 3.6rem;
-  font-family: Arizonia-Regular;
+  text-decoration: none;
+  color: var(--black-theme);
 }
 
 .recipe-items a:hover {
@@ -69,7 +64,7 @@ a {
 }
 
 .photo-container {
-  width: 36rem;
+  width: 32rem;
   aspect-ratio: 4 / 3;
   background-image: url(./images/dean-xavier-3vMwvstMCvw-unsplash.jpg);
   background-size: cover;
@@ -81,11 +76,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1.6rem;
 }
 
 .link-container a {
   font-size: 1.8rem;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  text-decoration: none;
   color: var(--black-theme);
 }
 
@@ -95,29 +92,41 @@ a {
 /* For smartphones in portrait mode */
 @media screen and (orientation: portrait) {
   html {
-    font-size: 6.25px;
+    font-size: 6.75px;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 20.01rem) {
-  html {
-    font-size: 7px;
-  }
-}
-
-@media screen and (orientation: portrait) and (min-width: 24rem) and (min-height: calc(50rem - 6rem)) {
+@media screen and (orientation: portrait) and (min-width: 22.5em) {
   html {
     font-size: 8px;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 24rem) and (min-height: calc(56rem - 6rem)) {
+@media screen and (orientation: portrait) and (min-width: 23.4em) {
   html {
-    font-size: 8.5px;
+    font-size: 8.25px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 24.3em) {
+  html {
+    font-size: 8.75px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 25.75em) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 26.75em) {
+  html {
+    font-size: 9.25px;
   }
 }
 /* For tablets in portrait mode */
-@media screen and (orientation: portrait) and (min-width: 48rem) {
+@media screen and (orientation: portrait) and (min-width: 48em) {
   html {
     font-size: 10px;
   }
@@ -125,7 +134,7 @@ a {
 /* For smartphones in landscape mode */
 @media screen and (orientation: landscape) {
   html {
-    font-size: 6.25px;
+    font-size: 6.75px;
   }
 
   body {
@@ -140,31 +149,43 @@ a {
   }
 }
 
-@media screen and (orientation: landscape) and (min-width: 41rem) {
-  html {
-    font-size: 7.25px;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 47rem) {
+@media screen and (orientation: landscape) and (min-width: 41.6em) {
   html {
     font-size: 8px;
   }
 }
 
-@media screen and (orientation: landscape) and (min-width: 53rem) {
+@media screen and (orientation: landscape) and (min-width: 50em) {
   html {
-    font-size: 8.5px;
+    font-size: 8.25px;
   }
 }
-/* For small and middle tablets in landscape mode */
-@media screen and (orientation: landscape) and (min-width: 64rem) {
+
+@media screen and (orientation: landscape) and (min-width: 52.75em) {
+  html {
+    font-size: 8.75px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 55.75em) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 58em) {
+  html {
+    font-size: 9.25px;
+  }
+}
+/* For small tablets in landscape mode */
+@media screen and (orientation: landscape) and (min-width: 64em) {
   html {
     font-size: 10px;
   }
 }
-/* For large tablets in landscape mode and laptops */
-@media screen and (orientation: landscape) and (min-width: 64rem) and (min-height: calc(56rem - 6rem)) {
+/* For middle and large tablets in landscape mode, laptops and desktops */
+@media screen and (orientation: landscape) and (min-width: 73.75em) {
   .main {
     height: 100vh;
     padding: 0;

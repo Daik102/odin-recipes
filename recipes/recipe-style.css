@@ -35,16 +35,16 @@ html {
 
 .title,
 .sub-title {
-  font-family: Arizonia-Regular;
+  font-family: Arizonia-Regular, Roboto, Arial, Helvetica, sans-serif;
 }
 
 .title {
   margin-bottom: 6rem;
-  font-size: 4.8rem;
+  font-size: 4.4rem;
 }
 
 .photo {
-  width: 44rem;
+  width: 40rem;
   aspect-ratio: 5 / 3;
   object-fit: cover;
   box-shadow: 0.8rem 0.8rem 0.8rem var(--shadow-theme);
@@ -57,7 +57,7 @@ html {
 
 .description-para {
   width: 44rem;
-  padding: 2.4rem;
+  padding: 2rem;
   font-size: 2.2rem;
   line-height: 1.4;
   color: var(--black-theme);
@@ -71,7 +71,7 @@ html {
   flex-direction: column;
   align-items: flex-start;
   width: 44rem;
-  padding: 2.4rem 4.8rem;
+  padding: 2rem 2rem 2rem 4rem;
   background-color: var(--board-theme);
   border-radius: 1.2rem;
 }
@@ -98,13 +98,13 @@ html {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 6rem 0 8rem;
+  padding: 4rem 0 6rem;
 }
 
 .footer a {
   font-weight: 600;
   font-size: 3.6rem;
-  font-family: Arizonia-Regular;
+  font-family: Arizonia-Regular, Roboto, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -114,43 +114,59 @@ html {
 /* For smartphones in portrait mode */
 @media screen and (orientation: portrait) {
   html {
-    font-size: 6.25px;
+    font-size: 6.5px;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 20.01rem) {
+@media screen and (orientation: portrait) and (min-width: 22.5em) {
   html {
-    font-size: 7px;
+    font-size: 7.75px;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 24rem) and (min-height: calc(50rem - 6rem)) {
+@media screen and (orientation: portrait) and (min-width: 23.4em) {
   html {
     font-size: 8px;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 24rem) and (min-height: calc(56rem - 6rem)) {
+@media screen and (orientation: portrait) and (min-width: 24.3em) {
+  html {
+    font-size: 8.25px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 25.75em) {
   html {
     font-size: 8.5px;
   }
 }
+
+@media screen and (orientation: portrait) and (min-width: 26.75em) {
+  html {
+    font-size: 8.75px;
+  }
+}
 /* For tablets in portrait mode */
-@media screen and (orientation: portrait) and (min-width: 48rem) {
+@media screen and (orientation: portrait) and (min-width: 48em) {
   html {
     font-size: 10px;
+  }
+
+  .photo {
+    width: 48rem;
   }
 
   .description-para,
   .ingredients-items,
   .steps-items {
-    width: 60rem;
+    width: 64rem;
   }
 }
 /* For smartphones in landscape mode */
 @media screen and (orientation: landscape) {
   html {
-    font-size: 6.25px;
+    font-size: 6.5px;
   }
 
   body {
@@ -162,32 +178,48 @@ html {
     width: 72rem;
   }
 
+  .photo {
+    width: 48rem;
+  }
+
   .description-para,
   .ingredients-items,
   .steps-items {
-    width: 60rem;
+    width: 64rem;
   }
 }
 
-@media screen and (orientation: landscape) and (min-width: 41rem) {
+@media screen and (orientation: landscape) and (min-width: 41.6em) {
   html {
-    font-size: 7.25px;
+    font-size: 7.75px;
   }
 }
 
-@media screen and (orientation: landscape) and (min-width: 47rem) {
+@media screen and (orientation: landscape) and (min-width: 50em) {
   html {
     font-size: 8px;
   }
 }
 
-@media screen and (orientation: landscape) and (min-width: 53rem) {
+@media screen and (orientation: landscape) and (min-width: 52.75em) {
+  html {
+    font-size: 8.25px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 55.75em) {
   html {
     font-size: 8.5px;
   }
 }
-/* For tablets in landscape mode and laptops */
-@media screen and (orientation: landscape) and (min-width: 64rem) {
+
+@media screen and (orientation: landscape) and (min-width: 58em) {
+  html {
+    font-size: 8.75px;
+  }
+}
+/* For tablets in landscape mode, laptops and desktops */
+@media screen and (orientation: landscape) and (min-width: 64em) {
   html {
     font-size: 10px;
   }
