@@ -21,10 +21,6 @@
   border: 0.4rem dashed var(--sub-theme);
 }
 
-.footer {
-  background-color:var(--main-theme);
-}
-
-.footer a {
+.home-link {
   color: var(--sub-theme);
 }

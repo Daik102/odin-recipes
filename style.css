@@ -23,11 +23,7 @@
 }
 
 html {
-  font-size: 10px;
-}
-
-body {
-  background-color: var(--main-theme);
+  font-size: 50%;
 }
 
 .main {
@@ -35,9 +31,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
-  height: 100vh;
+  gap: 4rem;
+  min-height: 100vh;
   margin: 0 auto;
+  background-color: var(--main-theme);
 }
 
 .title {
@@ -64,7 +61,8 @@ body {
 }
 
 .photo-container {
-  width: 32rem;
+  width: 100%;
+  max-width: 28rem;
   aspect-ratio: 4 / 3;
   background-image: url(./images/dean-xavier-3vMwvstMCvw-unsplash.jpg);
   background-size: cover;
@@ -89,105 +87,37 @@ body {
 .link-container a:hover {
   color: var(--sub-theme);
 }
-/* For smartphones in portrait mode */
-@media screen and (orientation: portrait) {
+
+/* Large Smartphones */
+@media screen and (min-width: 25.75em) {
   html {
-    font-size: 6.75px;
+    font-size: 56.25%;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 22.5em) {
+/* Tablets */
+@media screen and (min-width: 48em) {
   html {
-    font-size: 8px;
+    font-size: 62.5%;
+  }
+
+  .main {
+    gap: 6rem;
+  }
+
+  .photo-container {
+    max-width: 32rem;
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 23.4em) {
-  html {
-    font-size: 8.25px;
-  }
-}
-
-@media screen and (orientation: portrait) and (min-width: 24.3em) {
-  html {
-    font-size: 8.75px;
-  }
-}
-
-@media screen and (orientation: portrait) and (min-width: 25.75em) {
-  html {
-    font-size: 9px;
-  }
-}
-
-@media screen and (orientation: portrait) and (min-width: 26.75em) {
-  html {
-    font-size: 9.25px;
-  }
-}
-/* For tablets in portrait mode */
-@media screen and (orientation: portrait) and (min-width: 48em) {
-  html {
-    font-size: 10px;
-  }
-}
-/* For smartphones in landscape mode */
+/* Landscape mode */
 @media screen and (orientation: landscape) {
-  html {
-    font-size: 6.75px;
-  }
-
   body {
     background-color: var(--black-theme);
   }
 
   .main {
-    width: 72rem;
-    height: auto;
-    padding: 8rem 0;
-    background-color: var(--main-theme);
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 41.6em) {
-  html {
-    font-size: 8px;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 50em) {
-  html {
-    font-size: 8.25px;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 52.75em) {
-  html {
-    font-size: 8.75px;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 55.75em) {
-  html {
-    font-size: 9px;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 58em) {
-  html {
-    font-size: 9.25px;
-  }
-}
-/* For small tablets in landscape mode */
-@media screen and (orientation: landscape) and (min-width: 64em) {
-  html {
-    font-size: 10px;
-  }
-}
-/* For middle and large tablets in landscape mode, laptops and desktops */
-@media screen and (orientation: landscape) and (min-width: 73.75em) {
-  .main {
-    height: 100vh;
-    padding: 0;
+    max-width: 72rem;
+    padding: 6rem 0;
   }
 }
