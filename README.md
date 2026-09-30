@@ -5,12 +5,14 @@ This project is based on <a href="https://www.theodinproject.com/" target="_blan
 
 <h3>Features</h3>
 
+- Each recipes are stored in separate pages.
+
 - Recipe data is from <a href="https://www.allrecipes.com/">allrecipes</a>.
 
-- Each recipes are stored in separate pages.
+- Homepage photo is from <a href="https://unsplash.com/">Unsplash</a>.
 
 - Responsive Design implemented.
 
 <h3>Tech Stack</h3>
 
-- HTML CSS
+- Frontend: HTML CSS
