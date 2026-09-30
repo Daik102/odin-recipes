@@ -1,4 +1,4 @@
-<h2>Project: Recipes</h2>
+<h1>Project: Recipes</h1>
 
 A static site that has links for several recipes.<br>
 This project is based on <a href="https://www.theodinproject.com/" target="_blank" rel="noreferrer">The Odin Project</a>.
