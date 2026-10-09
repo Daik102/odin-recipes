@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arizonia-Regular, Roboto, Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -24,6 +23,7 @@
 
 html {
   font-size: 50%;
+  font-family: Arizonia-Regular, Roboto, Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -33,6 +33,7 @@ html {
   align-items: center;
   gap: 4rem;
   min-height: 100vh;
+  min-height: 100svh;
   margin: 0 auto;
   background-color: var(--main-theme);
 }
